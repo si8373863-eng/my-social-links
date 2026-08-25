@@ -4,165 +4,188 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Shahidul Islam | Social Links & Services</title>
-
-<meta name="description" content="Connect with Shahidul Islam on Facebook, TikTok, WhatsApp and IMO. Epoxy Floor and Self Leveling services.">
+<title>Shahidul Islam | Social & Services</title>
 
 <style>
 *{
     box-sizing:border-box;
+    margin:0;
+    padding:0;
 }
 
 body{
-    margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    background:
-        radial-gradient(circle at top, #1e3a8a 0%, #111827 45%, #030712 100%);
-    color:#fff;
+    font-family:Arial, sans-serif;
     min-height:100vh;
+    color:#fff;
+    background:
+        radial-gradient(circle at top left,#164e63,transparent 35%),
+        radial-gradient(circle at bottom right,#312e81,transparent 35%),
+        #020617;
+    padding:25px 15px;
 }
 
 .container{
-    width:92%;
-    max-width:430px;
+    width:100%;
+    max-width:480px;
     margin:auto;
-    padding:35px 0;
-    text-align:center;
 }
 
 /* Profile */
 .profile{
-    margin-bottom:25px;
+    text-align:center;
+    padding:20px 10px 25px;
 }
 
-.profile-logo{
-    width:95px;
-    height:95px;
+.avatar{
+    width:105px;
+    height:105px;
     margin:auto;
     border-radius:50%;
-    background:linear-gradient(135deg,#2563eb,#06b6d4);
     display:flex;
-    justify-content:center;
     align-items:center;
+    justify-content:center;
     font-size:38px;
     font-weight:bold;
-    border:4px solid rgba(255,255,255,.8);
-    box-shadow:0 0 30px rgba(37,99,235,.5);
+    background:linear-gradient(135deg,#06b6d4,#6366f1);
+    border:4px solid rgba(255,255,255,.25);
+    box-shadow:0 10px 35px rgba(0,0,0,.35);
 }
 
-h1{
-    margin:15px 0 5px;
+.profile h1{
+    margin-top:15px;
     font-size:28px;
 }
 
-.subtitle{
+.profile p{
+    margin-top:7px;
     color:#cbd5e1;
-    font-size:15px;
-}
-
-/* Service Card */
-.service{
-    background:rgba(255,255,255,.08);
-    border:1px solid rgba(255,255,255,.12);
-    border-radius:20px;
-    padding:20px;
-    margin:25px 0;
-    backdrop-filter:blur(10px);
-}
-
-.service h2{
-    margin:0 0 8px;
-    font-size:21px;
-}
-
-.service p{
-    margin:0 0 15px;
-    color:#dbeafe;
     font-size:14px;
-    line-height:1.5;
 }
 
-.service-btn{
-    display:block;
-    background:linear-gradient(135deg,#f59e0b,#ea580c);
-    color:white;
-    text-decoration:none;
-    padding:13px;
-    border-radius:12px;
-    font-weight:bold;
+/* Main card */
+.card{
+    background:rgba(15,23,42,.78);
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:24px;
+    padding:18px;
+    backdrop-filter:blur(15px);
+    box-shadow:0 20px 50px rgba(0,0,0,.3);
 }
 
-/* Social Buttons */
-.links{
-    margin-top:20px;
-}
-
+/* Buttons */
 .link{
     display:flex;
     align-items:center;
     gap:15px;
     text-decoration:none;
     color:white;
-    background:rgba(31,41,55,.9);
-    margin:14px 0;
-    padding:14px;
+    padding:15px;
+    margin-bottom:12px;
     border-radius:16px;
-    font-size:17px;
-    font-weight:bold;
+    background:rgba(255,255,255,.08);
     border:1px solid rgba(255,255,255,.08);
     transition:.25s;
 }
 
 .link:hover{
-    transform:translateY(-3px);
-    background:#374151;
+    transform:translateY(-2px);
+    background:rgba(255,255,255,.14);
 }
 
 .icon{
-    width:42px;
-    height:42px;
-    border-radius:50%;
-    object-fit:cover;
+    width:45px;
+    height:45px;
+    border-radius:13px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:21px;
+    background:linear-gradient(135deg,#0ea5e9,#4f46e5);
 }
 
-/* WhatsApp */
-.whatsapp{
-    background:linear-gradient(135deg,#16a34a,#15803d);
+.link-text{
+    flex:1;
 }
 
-/* Contact */
-.contact{
-    margin-top:25px;
-    padding:18px;
-    background:rgba(255,255,255,.06);
-    border-radius:18px;
+.link-text strong{
+    display:block;
+    font-size:16px;
 }
 
-.contact h3{
-    margin-top:0;
-}
-
-.phone{
-    color:#86efac;
-    font-size:20px;
-    font-weight:bold;
-}
-
-/* Footer */
-footer{
-    margin-top:25px;
+.link-text small{
     color:#94a3b8;
     font-size:12px;
 }
 
-@media(max-width:350px){
-    h1{
-        font-size:24px;
-    }
+.arrow{
+    font-size:20px;
+    color:#94a3b8;
+}
 
-    .link{
-        font-size:15px;
-    }
+/* Services */
+.section-title{
+    text-align:center;
+    margin:25px 0 15px;
+}
+
+.section-title h2{
+    font-size:21px;
+}
+
+.section-title p{
+    color:#94a3b8;
+    margin-top:5px;
+    font-size:13px;
+}
+
+.service{
+    padding:17px;
+    margin-bottom:12px;
+    border-radius:17px;
+    background:linear-gradient(
+        135deg,
+        rgba(14,165,233,.14),
+        rgba(99,102,241,.14)
+    );
+    border:1px solid rgba(255,255,255,.09);
+}
+
+.service h3{
+    font-size:17px;
+}
+
+.service p{
+    margin-top:5px;
+    color:#cbd5e1;
+    font-size:13px;
+    line-height:1.5;
+}
+
+/* WhatsApp CTA */
+.cta{
+    display:block;
+    text-align:center;
+    text-decoration:none;
+    color:white;
+    margin-top:18px;
+    padding:16px;
+    border-radius:16px;
+    font-weight:bold;
+    background:linear-gradient(135deg,#16a34a,#22c55e);
+    box-shadow:0 10px 25px rgba(34,197,94,.2);
+    transition:.25s;
+}
+
+.cta:hover{
+    transform:translateY(-2px);
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    color:#64748b;
+    font-size:11px;
+    padding:22px 5px 5px;
 }
 </style>
 </head>
@@ -171,110 +194,113 @@ footer{
 
 <div class="container">
 
-    <!-- Profile -->
+    <!-- PROFILE -->
     <div class="profile">
-
-        <div class="profile-logo">
-            SI
-        </div>
+        <div class="avatar">SI</div>
 
         <h1>Shahidul Islam</h1>
 
-        <div class="subtitle">
-            Social Links • Services • Contact
-        </div>
-
+        <p>Social Links • Services • Contact</p>
     </div>
 
 
-    <!-- Service -->
-    <div class="service">
+    <div class="card">
 
-        <h2>🏗️ Epoxy Floor & Self Leveling</h2>
+        <!-- SOCIAL LINKS -->
 
-        <p>
-            Professional epoxy flooring and self-leveling floor services.
-            Contact me for work and project inquiries.
-        </p>
-
-        <a class="service-btn"
-           href="https://wa.me/966578608364?text=Hello%20Shahidul,%20I%20am%20interested%20in%20Epoxy%20Floor%20and%20Self%20Leveling%20services."
-           target="_blank">
-            📲 Get a Quote on WhatsApp
-        </a>
-
-    </div>
-
-
-    <!-- Social Links -->
-    <div class="links">
-
-        <!-- Facebook -->
         <a class="link"
            href="https://www.facebook.com/shahidul.islam.875751"
            target="_blank">
 
-            <img class="icon"
-                 src="https://cdn.simpleicons.org/facebook/1877F2"
-                 alt="Facebook">
+            <div class="icon">f</div>
 
-            <span>Facebook</span>
+            <div class="link-text">
+                <strong>Facebook</strong>
+                <small>Visit my Facebook profile</small>
+            </div>
 
+            <div class="arrow">›</div>
         </a>
 
 
-        <!-- TikTok -->
         <a class="link"
            href="https://www.tiktok.com/@shahidulislam8022"
            target="_blank">
 
-            <img class="icon"
-                 src="https://cdn.simpleicons.org/tiktok/FFFFFF"
-                 alt="TikTok">
+            <div class="icon">♪</div>
 
-            <span>TikTok</span>
+            <div class="link-text">
+                <strong>TikTok</strong>
+                <small>Follow me on TikTok</small>
+            </div>
 
+            <div class="arrow">›</div>
         </a>
 
 
-        <!-- WhatsApp -->
-        <a class="link whatsapp"
+        <a class="link"
            href="https://wa.me/966578608364"
            target="_blank">
 
-            <img class="icon"
-                 src="https://cdn.simpleicons.org/whatsapp/FFFFFF"
-                 alt="WhatsApp">
+            <div class="icon">W</div>
 
-            <span>WhatsApp</span>
+            <div class="link-text">
+                <strong>WhatsApp</strong>
+                <small>Chat with me directly</small>
+            </div>
 
+            <div class="arrow">›</div>
         </a>
 
 
-        <!-- IMO -->
         <a class="link"
-           href="https://imo.im/"
+           href="tel:+966578608364">
+
+            <div class="icon">☎</div>
+
+            <div class="link-text">
+                <strong>IMO / Contact</strong>
+                <small>+966 57 860 8364</small>
+            </div>
+
+            <div class="arrow">›</div>
+        </a>
+
+
+        <!-- SERVICES -->
+
+        <div class="section-title">
+            <h2>My Services</h2>
+            <p>Professional flooring services</p>
+        </div>
+
+
+        <div class="service">
+            <h3>🏠 Epoxy Floor</h3>
+            <p>
+                Professional epoxy flooring solutions
+                for homes, shops and commercial spaces.
+            </p>
+        </div>
+
+
+        <div class="service">
+            <h3>✨ Self-Leveling</h3>
+            <p>
+                Smooth and level flooring solutions
+                for different types of projects.
+            </p>
+        </div>
+
+
+        <!-- CONTACT BUTTON -->
+
+        <a class="cta"
+           href="https://wa.me/966578608364?text=Hello%20Shahidul%2C%20I%20am%20interested%20in%20your%20service."
            target="_blank">
 
-            <img class="icon"
-                 src="https://cdn.simpleicons.org/imo/00AEEF"
-                 alt="IMO">
-
-            <span>IMO</span>
-
+            💬 Get a Quote on WhatsApp
         </a>
-
-    </div>
-
-
-    <!-- Contact -->
-    <div class="contact">
-
-        <h3>📞 Contact Me</h3>
-
-        <div class="phone">
-            +966 57 860 8364
-        </div>
 
     </div>
 
