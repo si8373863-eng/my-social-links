@@ -3,71 +3,287 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Social Links</title>
+
+<title>Shahidul Islam | Social Links & Services</title>
+
+<meta name="description" content="Connect with Shahidul Islam on Facebook, TikTok, WhatsApp and IMO. Epoxy Floor and Self Leveling services.">
 
 <style>
+*{
+    box-sizing:border-box;
+}
+
 body{
     margin:0;
-    font-family:Arial,sans-serif;
-    background:#111827;
-    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    background:
+        radial-gradient(circle at top, #1e3a8a 0%, #111827 45%, #030712 100%);
+    color:#fff;
+    min-height:100vh;
+}
+
+.container{
+    width:92%;
+    max-width:430px;
+    margin:auto;
+    padding:35px 0;
+    text-align:center;
+}
+
+/* Profile */
+.profile{
+    margin-bottom:25px;
+}
+
+.profile-logo{
+    width:95px;
+    height:95px;
+    margin:auto;
+    border-radius:50%;
+    background:linear-gradient(135deg,#2563eb,#06b6d4);
     display:flex;
     justify-content:center;
     align-items:center;
-    min-height:100vh;
+    font-size:38px;
+    font-weight:bold;
+    border:4px solid rgba(255,255,255,.8);
+    box-shadow:0 0 30px rgba(37,99,235,.5);
 }
-.container{
-    width:90%;
-    max-width:400px;
-    text-align:center;
+
+h1{
+    margin:15px 0 5px;
+    font-size:28px;
 }
-h1{margin-bottom:30px;}
-a{
+
+.subtitle{
+    color:#cbd5e1;
+    font-size:15px;
+}
+
+/* Service Card */
+.service{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:20px;
+    padding:20px;
+    margin:25px 0;
+    backdrop-filter:blur(10px);
+}
+
+.service h2{
+    margin:0 0 8px;
+    font-size:21px;
+}
+
+.service p{
+    margin:0 0 15px;
+    color:#dbeafe;
+    font-size:14px;
+    line-height:1.5;
+}
+
+.service-btn{
+    display:block;
+    background:linear-gradient(135deg,#f59e0b,#ea580c);
+    color:white;
+    text-decoration:none;
+    padding:13px;
+    border-radius:12px;
+    font-weight:bold;
+}
+
+/* Social Buttons */
+.links{
+    margin-top:20px;
+}
+
+.link{
     display:flex;
     align-items:center;
     gap:15px;
     text-decoration:none;
     color:white;
-    background:#1f2937;
-    margin:15px 0;
-    padding:16px;
-    border-radius:14px;
-    font-size:18px;
+    background:rgba(31,41,55,.9);
+    margin:14px 0;
+    padding:14px;
+    border-radius:16px;
+    font-size:17px;
+    font-weight:bold;
+    border:1px solid rgba(255,255,255,.08);
+    transition:.25s;
+}
+
+.link:hover{
+    transform:translateY(-3px);
+    background:#374151;
+}
+
+.icon{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+/* WhatsApp */
+.whatsapp{
+    background:linear-gradient(135deg,#16a34a,#15803d);
+}
+
+/* Contact */
+.contact{
+    margin-top:25px;
+    padding:18px;
+    background:rgba(255,255,255,.06);
+    border-radius:18px;
+}
+
+.contact h3{
+    margin-top:0;
+}
+
+.phone{
+    color:#86efac;
+    font-size:20px;
     font-weight:bold;
 }
-.icon{
-    width:40px;
-    height:40px;
-    border-radius:50%;
+
+/* Footer */
+footer{
+    margin-top:25px;
+    color:#94a3b8;
+    font-size:12px;
+}
+
+@media(max-width:350px){
+    h1{
+        font-size:24px;
+    }
+
+    .link{
+        font-size:15px;
+    }
 }
 </style>
 </head>
 
 <body>
+
 <div class="container">
 
-<h1>My Social Links</h1>
+    <!-- Profile -->
+    <div class="profile">
 
-<a href="https://www.facebook.com/shahidul.islam.875751" target="_blank">
-<img class="icon" src="https://cdn.simpleicons.org/facebook/1877F2">
-Facebook
-</a>
+        <div class="profile-logo">
+            SI
+        </div>
 
-<a href="https://www.tiktok.com/@shahidulislam8022" target="_blank">
-<img class="icon" src="https://cdn.simpleicons.org/tiktok/FFFFFF">
-TikTok
-</a>
+        <h1>Shahidul Islam</h1>
 
-<a href="https://wa.me/966578608364" target="_blank">
-<img class="icon" src="https://cdn.simpleicons.org/whatsapp/25D366">
-WhatsApp
-</a>
+        <div class="subtitle">
+            Social Links • Services • Contact
+        </div>
 
-<a href="https://imo.im/" target="_blank">
-<img class="icon" src="https://cdn.simpleicons.org/imo/00AEEF">
-IMO
-</a>
+    </div>
+
+
+    <!-- Service -->
+    <div class="service">
+
+        <h2>🏗️ Epoxy Floor & Self Leveling</h2>
+
+        <p>
+            Professional epoxy flooring and self-leveling floor services.
+            Contact me for work and project inquiries.
+        </p>
+
+        <a class="service-btn"
+           href="https://wa.me/966578608364?text=Hello%20Shahidul,%20I%20am%20interested%20in%20Epoxy%20Floor%20and%20Self%20Leveling%20services."
+           target="_blank">
+            📲 Get a Quote on WhatsApp
+        </a>
+
+    </div>
+
+
+    <!-- Social Links -->
+    <div class="links">
+
+        <!-- Facebook -->
+        <a class="link"
+           href="https://www.facebook.com/shahidul.islam.875751"
+           target="_blank">
+
+            <img class="icon"
+                 src="https://cdn.simpleicons.org/facebook/1877F2"
+                 alt="Facebook">
+
+            <span>Facebook</span>
+
+        </a>
+
+
+        <!-- TikTok -->
+        <a class="link"
+           href="https://www.tiktok.com/@shahidulislam8022"
+           target="_blank">
+
+            <img class="icon"
+                 src="https://cdn.simpleicons.org/tiktok/FFFFFF"
+                 alt="TikTok">
+
+            <span>TikTok</span>
+
+        </a>
+
+
+        <!-- WhatsApp -->
+        <a class="link whatsapp"
+           href="https://wa.me/966578608364"
+           target="_blank">
+
+            <img class="icon"
+                 src="https://cdn.simpleicons.org/whatsapp/FFFFFF"
+                 alt="WhatsApp">
+
+            <span>WhatsApp</span>
+
+        </a>
+
+
+        <!-- IMO -->
+        <a class="link"
+           href="https://imo.im/"
+           target="_blank">
+
+            <img class="icon"
+                 src="https://cdn.simpleicons.org/imo/00AEEF"
+                 alt="IMO">
+
+            <span>IMO</span>
+
+        </a>
+
+    </div>
+
+
+    <!-- Contact -->
+    <div class="contact">
+
+        <h3>📞 Contact Me</h3>
+
+        <div class="phone">
+            +966 57 860 8364
+        </div>
+
+    </div>
+
+
+    <footer>
+        © 2026 Shahidul Islam • All Rights Reserved
+    </footer>
 
 </div>
+
 </body>
 </html>
