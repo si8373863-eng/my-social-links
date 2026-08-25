@@ -14,300 +14,109 @@
 }
 
 body{
-    font-family:Arial, sans-serif;
+    font-family:Arial,sans-serif;
     min-height:100vh;
     color:#fff;
     background:
-        radial-gradient(circle at top left,#164e63,transparent 35%),
-        radial-gradient(circle at bottom right,#312e81,transparent 35%),
-        #020617;
-    padding:25px 15px;
-}
-
-.container{
-    width:100%;
-    max-width:480px;
-    margin:auto;
-}
-
-/* Profile */
-.profile{
-    text-align:center;
-    padding:20px 10px 25px;
-}
-
-.avatar{
-    width:105px;
-    height:105px;
-    margin:auto;
-    border-radius:50%;
+        radial-gradient(circle at top,#173b5e,#07111d 55%,#02070c);
     display:flex;
-    align-items:center;
     justify-content:center;
-    font-size:38px;
-    font-weight:bold;
-    background:linear-gradient(135deg,#06b6d4,#6366f1);
-    border:4px solid rgba(255,255,255,.25);
-    box-shadow:0 10px 35px rgba(0,0,0,.35);
+    align-items:center;
+    padding:20px;
 }
 
-.profile h1{
-    margin-top:15px;
-    font-size:28px;
-}
-
-.profile p{
-    margin-top:7px;
-    color:#cbd5e1;
-    font-size:14px;
-}
-
-/* Main card */
 .card{
-    background:rgba(15,23,42,.78);
-    border:1px solid rgba(255,255,255,.12);
-    border-radius:24px;
-    padding:18px;
+    width:100%;
+    max-width:430px;
+    padding:30px 20px;
+    text-align:center;
+    border-radius:25px;
+    background:rgba(255,255,255,0.08);
     backdrop-filter:blur(15px);
-    box-shadow:0 20px 50px rgba(0,0,0,.3);
+    box-shadow:0 20px 50px rgba(0,0,0,.45);
 }
 
-/* Buttons */
-.link{
-    display:flex;
-    align-items:center;
-    gap:15px;
-    text-decoration:none;
-    color:white;
-    padding:15px;
-    margin-bottom:12px;
-    border-radius:16px;
-    background:rgba(255,255,255,.08);
-    border:1px solid rgba(255,255,255,.08);
-    transition:.25s;
+.profile{
+    width:110px;
+    height:110px;
+    margin:0 auto 15px;
+    border-radius:50%;
+    overflow:hidden;
+    border:3px solid #fff;
+    box-shadow:0 0 25px rgba(255,255,255,.35);
 }
 
-.link:hover{
-    transform:translateY(-2px);
-    background:rgba(255,255,255,.14);
+.profile img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 
-.icon{
-    width:45px;
-    height:45px;
-    border-radius:13px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:21px;
-    background:linear-gradient(135deg,#0ea5e9,#4f46e5);
+h1{
+    font-size:27px;
+    margin-bottom:8px;
 }
 
-.link-text{
-    flex:1;
-}
-
-.link-text strong{
-    display:block;
-    font-size:16px;
-}
-
-.link-text small{
-    color:#94a3b8;
-    font-size:12px;
-}
-
-.arrow{
-    font-size:20px;
-    color:#94a3b8;
-}
-
-/* Services */
-.section-title{
-    text-align:center;
-    margin:25px 0 15px;
-}
-
-.section-title h2{
-    font-size:21px;
-}
-
-.section-title p{
-    color:#94a3b8;
-    margin-top:5px;
-    font-size:13px;
-}
-
-.service{
-    padding:17px;
-    margin-bottom:12px;
-    border-radius:17px;
-    background:linear-gradient(
-        135deg,
-        rgba(14,165,233,.14),
-        rgba(99,102,241,.14)
-    );
-    border:1px solid rgba(255,255,255,.09);
-}
-
-.service h3{
-    font-size:17px;
-}
-
-.service p{
-    margin-top:5px;
+.subtitle{
     color:#cbd5e1;
-    font-size:13px;
-    line-height:1.5;
+    margin-bottom:25px;
 }
 
-/* WhatsApp CTA */
-.cta{
-    display:block;
-    text-align:center;
+.links{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+}
+
+.links a{
     text-decoration:none;
-    color:white;
-    margin-top:18px;
-    padding:16px;
-    border-radius:16px;
-    font-weight:bold;
-    background:linear-gradient(135deg,#16a34a,#22c55e);
-    box-shadow:0 10px 25px rgba(34,197,94,.2);
-    transition:.25s;
+    color:#fff;
+    padding:15px;
+    border-radius:14px;
+    background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.15);
+    transition:.3s;
 }
 
-.cta:hover{
-    transform:translateY(-2px);
+.links a:hover{
+    transform:translateY(-3px);
+    background:rgba(255,255,255,.22);
 }
 
-/* Footer */
-footer{
-    text-align:center;
-    color:#64748b;
-    font-size:11px;
-    padding:22px 5px 5px;
+.footer{
+    margin-top:25px;
+    font-size:13px;
+    color:#94a3b8;
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="card">
 
-    <!-- PROFILE -->
+    <!-- Profile Picture -->
     <div class="profile">
-        <div class="avatar">SI</div>
-
-        <h1>Shahidul Islam</h1>
-
-        <p>Social Links • Services • Contact</p>
+        <img src="Profile.jpg" alt="Shahidul Islam">
     </div>
 
+    <h1>Shahidul Islam</h1>
 
-    <div class="card">
+    <p class="subtitle">
+        Social Media & Services
+    </p>
 
-        <!-- SOCIAL LINKS -->
-
-        <a class="link"
-           href="https://www.facebook.com/shahidul.islam.875751"
-           target="_blank">
-
-            <div class="icon">f</div>
-
-            <div class="link-text">
-                <strong>Facebook</strong>
-                <small>Visit my Facebook profile</small>
-            </div>
-
-            <div class="arrow">›</div>
-        </a>
-
-
-        <a class="link"
-           href="https://www.tiktok.com/@shahidulislam8022"
-           target="_blank">
-
-            <div class="icon">♪</div>
-
-            <div class="link-text">
-                <strong>TikTok</strong>
-                <small>Follow me on TikTok</small>
-            </div>
-
-            <div class="arrow">›</div>
-        </a>
-
-
-        <a class="link"
-           href="https://wa.me/966578608364"
-           target="_blank">
-
-            <div class="icon">W</div>
-
-            <div class="link-text">
-                <strong>WhatsApp</strong>
-                <small>Chat with me directly</small>
-            </div>
-
-            <div class="arrow">›</div>
-        </a>
-
-
-        <a class="link"
-           href="tel:+966578608364">
-
-            <div class="icon">☎</div>
-
-            <div class="link-text">
-                <strong>IMO / Contact</strong>
-                <small>+966 57 860 8364</small>
-            </div>
-
-            <div class="arrow">›</div>
-        </a>
-
-
-        <!-- SERVICES -->
-
-        <div class="section-title">
-            <h2>My Services</h2>
-            <p>Professional flooring services</p>
-        </div>
-
-
-        <div class="service">
-            <h3>🏠 Epoxy Floor</h3>
-            <p>
-                Professional epoxy flooring solutions
-                for homes, shops and commercial spaces.
-            </p>
-        </div>
-
-
-        <div class="service">
-            <h3>✨ Self-Leveling</h3>
-            <p>
-                Smooth and level flooring solutions
-                for different types of projects.
-            </p>
-        </div>
-
-
-        <!-- CONTACT BUTTON -->
-
-        <a class="cta"
-           href="https://wa.me/966578608364?text=Hello%20Shahidul%2C%20I%20am%20interested%20in%20your%20service."
-           target="_blank">
-
-            💬 Get a Quote on WhatsApp
-        </a>
-
+    <div class="links">
+        <a href="#" target="_blank">📘 Facebook</a>
+        <a href="#" target="_blank">📱 WhatsApp</a>
+        <a href="#" target="_blank">▶️ YouTube</a>
+        <a href="#" target="_blank">📷 Instagram</a>
+        <a href="#" target="_blank">💬 Contact Me</a>
     </div>
 
-
-    <footer>
-        © 2026 Shahidul Islam • All Rights Reserved
-    </footer>
+    <div class="footer">
+        © 2026 Shahidul Islam
+    </div>
 
 </div>
 
