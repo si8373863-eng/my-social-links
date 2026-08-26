@@ -6,6 +6,10 @@
 
 <title>Shahidul Islam | Social & Services</title>
 
+<!-- Font Awesome Icons -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 <style>
 *{
     box-sizing:border-box;
@@ -18,141 +22,173 @@ body{
     min-height:100vh;
     color:#fff;
     background:
-        radial-gradient(circle at top,#193b5a 0%,#07121d 45%,#02070c 100%);
+    radial-gradient(circle at top,#183b66 0%,#071526 45%,#02070d 100%);
     display:flex;
     justify-content:center;
     align-items:center;
-    padding:20px;
+    padding:25px 15px;
 }
 
-.card{
+.container{
     width:100%;
-    max-width:420px;
+    max-width:430px;
     text-align:center;
-    padding:30px 20px;
-    border-radius:25px;
-    background:rgba(255,255,255,0.08);
-    border:1px solid rgba(255,255,255,0.15);
-    box-shadow:0 15px 40px rgba(0,0,0,.45);
-    backdrop-filter:blur(12px);
 }
 
-.profile{
-    width:120px;
-    height:120px;
-    border-radius:50%;
+/* Profile */
+.profile-img{
+    width:125px;
+    height:125px;
     object-fit:cover;
+    border-radius:50%;
     border:4px solid #fff;
-    box-shadow:0 5px 20px rgba(0,0,0,.4);
+    box-shadow:
+        0 0 15px rgba(255,255,255,.35),
+        0 0 35px rgba(0,170,255,.25);
     margin-bottom:15px;
 }
 
-h1{
+.profile-name{
     font-size:28px;
-    margin-bottom:7px;
-}
-
-.subtitle{
-    color:#c9d7e5;
-    margin-bottom:20px;
-}
-
-.services{
-    background:rgba(255,255,255,.08);
-    border-radius:15px;
-    padding:15px;
-    margin-bottom:20px;
-}
-
-.services h2{
-    font-size:18px;
-    margin-bottom:8px;
-}
-
-.services p{
-    color:#d8e4ee;
-    line-height:1.6;
-}
-
-.links{
-    display:flex;
-    flex-direction:column;
-    gap:12px;
-}
-
-.links a{
-    text-decoration:none;
-    color:#fff;
-    padding:14px;
-    border-radius:14px;
-    background:rgba(255,255,255,.12);
-    border:1px solid rgba(255,255,255,.12);
-    font-size:17px;
     font-weight:bold;
+    margin-bottom:6px;
+}
+
+.profile-title{
+    font-size:15px;
+    color:#bcd4ea;
+    margin-bottom:22px;
+}
+
+/* Buttons */
+.social-btn{
+    width:100%;
+    min-height:58px;
+    margin:12px 0;
+    padding:12px 20px;
+    border-radius:16px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:14px;
+    color:#fff;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.18);
+    box-shadow:0 8px 25px rgba(0,0,0,.25);
     transition:.25s;
 }
 
-.links a:hover{
-    transform:scale(1.03);
-    background:rgba(255,255,255,.2);
+.social-btn:hover{
+    transform:translateY(-3px);
+    background:rgba(255,255,255,.15);
 }
 
+.social-btn i{
+    font-size:25px;
+    width:30px;
+}
+
+/* Service */
+.services{
+    margin-top:24px;
+    padding:20px;
+    border-radius:18px;
+    background:rgba(255,255,255,.07);
+    border:1px solid rgba(255,255,255,.15);
+}
+
+.services h2{
+    font-size:20px;
+    margin-bottom:12px;
+}
+
+.services p{
+    line-height:1.7;
+    color:#d7e6f3;
+    font-size:15px;
+}
+
+.service-item{
+    margin-top:8px;
+    font-weight:bold;
+}
+
+/* Footer */
 .footer{
-    margin-top:20px;
-    color:#9fb2c3;
-    font-size:13px;
+    margin-top:22px;
+    font-size:12px;
+    color:#8fa8bd;
 }
 </style>
 </head>
 
 <body>
 
-<div class="card">
+<div class="container">
 
-    <!-- PROFILE PHOTO -->
-    <!-- আপনার GitHub-এ Profile.jpg থাকলে নিচের লিংকটি ঠিক করে দিন -->
-    <img src="Profile.jpg" alt="Shahidul Islam" class="profile">
+    <!-- Profile Photo -->
+    <img src="profile.jpg"
+         alt="Shahidul Islam"
+         class="profile-img">
 
-    <h1>Shahidul Islam</h1>
+    <h1 class="profile-name">Shahidul Islam</h1>
 
-    <p class="subtitle">
-        Epoxy Floor & Self Leveling Specialist
+    <p class="profile-title">
+        Epoxy Floor & Finishing Specialist
     </p>
 
+    <!-- Facebook -->
+    <a class="social-btn"
+       href="https://www.facebook.com/shahidul.islam.875751"
+       target="_blank"
+       rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+        <span>Facebook</span>
+    </a>
+
+    <!-- TikTok -->
+    <a class="social-btn"
+       href="https://www.tiktok.com/@shahidulislam8022"
+       target="_blank"
+       rel="noopener">
+        <i class="fab fa-tiktok"></i>
+        <span>TikTok</span>
+    </a>
+
+    <!-- WhatsApp -->
+    <a class="social-btn"
+       href="https://wa.me/966578608364"
+       target="_blank"
+       rel="noopener">
+        <i class="fab fa-whatsapp"></i>
+        <span>WhatsApp</span>
+    </a>
+
+    <!-- Phone -->
+    <a class="social-btn"
+       href="tel:+966578608364">
+        <i class="fas fa-phone"></i>
+        <span>Call Me</span>
+    </a>
+
+    <!-- Services -->
     <div class="services">
         <h2>My Services</h2>
-        <p>
-            Epoxy Floor<br>
-            Self Leveling<br>
+
+        <p class="service-item">
+            Epoxy Floor
+        </p>
+
+        <p class="service-item">
+            Self Leveling
+        </p>
+
+        <p class="service-item">
             Floor Coating & Finishing
         </p>
-    </div>
-
-    <div class="links">
-
-        <!-- FACEBOOK -->
-        <a href="https://www.facebook.com/shahidul.islam.875751"
-           target="_blank">
-            📘 Facebook
-        </a>
-
-        <!-- TIKTOK -->
-        <a href="https://www.tiktok.com/@shahidulislam8022"
-           target="_blank">
-            🎵 TikTok
-        </a>
-
-        <!-- WHATSAPP -->
-        <a href="https://wa.me/966578608364"
-           target="_blank">
-            💬 WhatsApp
-        </a>
-
-        <!-- PHONE -->
-        <a href="tel:+966578608364">
-            📞 Call Me
-        </a>
-
     </div>
 
     <div class="footer">
